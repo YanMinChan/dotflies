@@ -1,24 +1,19 @@
--- configure <space> as the leaderkey
-vim.g.mapleader = ' '
-vim.g.maplocalleader = ' '
+-- keymaps
+local M = {}
 
-vim.opt.backspace = '2'
-vim.opt.showcmd = true
-vim.opt.laststatus = 2
-vim.opt.autowrite = true
-vim.opt.cursorline = true
-vim.opt.autoread = true
+-- basic keymap
+function M.basic()
+  vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>', { desc = 'Clear highlight' })
+  vim.keymap.set('n', '<leader><leader>x', '<cmd>source %<CR>', { desc = 'Source current file' })
+end
 
--- use spaces for tabs and whatnot
-vim.opt.tabstop = 2
-vim.opt.shiftwidth = 2
-vim.opt.shiftround = true
-vim.opt.expandtab = true
+-- telescope keymap
+function M.telescope()
+  local builtin = require('telescope.builtin')
+  vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Telescope find files' })
+  vim.keymap.set('n', '<leader>fg', builtin.live_grep,  { desc = 'Telescope live grep' })
+  vim.keymap.set('n', '<leader>fb', builtin.buffers,    { desc = 'Telescope buffers' })
+  vim.keymap.set('n', '<leader>fh', builtin.help_tags,  { desc = 'Telescope help tags' })
+end
 
--- leaderkey shortcuts
-vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
-vim.keymap.set('n', '<leader><leader>x', '<cmd>source %<CR>')
-
--- telescope shortcuts
-
-
+return M
