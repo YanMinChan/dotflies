@@ -1,11 +1,13 @@
 # dotfiles
 Dotfiles setup
 
+## Desktop environment
+- Hyprland. Template from [JaKooLit](https://github.com/JaKooLit/Arch-Hyprland)
 
-## neovim
-- managed by the [lazy.nvim](https://lazy.folke.io/) plugin manager
+## Neovim
+- Managed by the [lazy.nvim](https://lazy.folke.io/) plugin manager
 
-### plugins
+### Plugins
 - [telescope](https://github.com/nvim-telescope/telescope.nvim)
 - [nvim-tree](https://github.com/nvim-tree/nvim-tree.lua)
 - [lualine](https://github.com/nvim-lualine/lualine.nvim)
