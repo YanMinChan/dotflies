@@ -13,3 +13,9 @@ Dotfiles setup
 - [lualine](https://github.com/nvim-lualine/lualine.nvim)
 - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - [render-markdown.nvim](https://github.com/MeanderingProgrammer/render-markdown.nvim)
+
+# Personal
+Some of my useful personal add-ons
+
+## Editor config
+- C#: from the [dotnet team](https://github.com/dotnet/runtime/blob/1d32e0a510d3dd48b3c8ddcdf0a86e5d4292b896/.editorconfig)
