@@ -24,4 +24,10 @@ function M.diagnostic()
   end, { desc = 'Toggle diagnostic virtual text' })
 end
 
+
+-- terminal
+function M.terminal()
+  vim.keymap.set('n', '<leader>T', ':ToggleTerm<CR>', { desc = 'Toggle terminal'})
+end
+
 return M

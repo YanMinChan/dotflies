@@ -7,4 +7,5 @@ require("lsp.diagnostic") -- diagnostic
 local keymaps = require("custom.keymaps")
 keymaps.basic()
 keymaps.telescope()
-
+keymaps.diagnostic()
+keymaps.terminal()
